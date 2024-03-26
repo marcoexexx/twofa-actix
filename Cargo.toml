@@ -1,0 +1,18 @@
+[package]
+name = "twofa-actix"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.5.1"
+base32 = "0.4.0"
+chrono = { version = "0.4.35", features = ["serde"] }
+env_logger = "0.11.3"
+rand = "0.8.5"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+totp-rs = "5.5.1"
+uuid = { version = "1.8.0", features = ["v4"] }
